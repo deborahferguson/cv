@@ -1,27 +1,32 @@
 \documentclass[11pt]{article}
+
+\usepackage[style=numeric,sorting=none]{biblatex}%<- specify style
+\renewbibmacro{in:}{}
+\addbibresource{cv.bib}%<- specify bib file
+
 \usepackage[margin=0.75in]{geometry}
 \makeatletter
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 \makeatother
 \begin{document}
+%\nobibliography{refs}
+%\bibliographystyle{unsrt}	
 \begin{center}
   \textbf{DEBORAH FERGUSON}\\
-  PhD Candidate\\
-  School of Physics, Center for Relativistic Astrophysics\\
-  Georgia Institute of Technology\\
+  School of Physics, Center for Gravitational Physics\\
+  University of Texas at Austin\\
 \end{center}  
 
 \begin{flushleft}
 
-  Email: dferguson41@gatech.edu\\
+  Email: deborah.ferguson@austin.utexas.edu\\
   Phone: (859) 699-2196\\
-  Address: 525 Glen Iris Drive NE, Unit 2408, Atlanta, GA 30308\\
   Webpage: deborahferguson.info\\
-  Expected Date of Graduation: Spring 2021
   \vspace{8px}
   
   \textbf{Education:}
   \begin{itemize}
+  \item Ph.D., Physics, Georgia Institute of Techcnology, 2020
   \item M.S., Physics, Georgia Institute of Techcnology, 2017
   \item B.S., Physics, University of Kentucky, 2016, \textit{summa cum laude}, \\ Mathematics and Computer Science Minors
   \end{itemize}
@@ -31,7 +36,7 @@
   \item Using Compact Binary Coalescences to Probe Strong-Field Gravity \\
     Institute: Georgia Institute of Technology \\
     Level: Graduate \\
-    Years: 2016-Present \\
+    Years: 2016-2020 \\
     Advisor: Deirdre Shoemaker 
   \item Milky Way Tomography with K and M Dwarf Stars: The Vertical Structure of the Galactic Disk \\
     Institute: University of Kentucky \\
@@ -62,6 +67,8 @@
 
   \textbf{Honors and Awards:}
   \begin{itemize}
+  \item 2020 - Larry S. O'Hara Graduate Student Fellowship (Georgia Institute of Technology)
+  \item 2020 - Amelio Award for Research Excellence (Georgia Institute of Technology)
   \item 2019 - Lindau Nobel Laureate Meeting (Oak Ridge and Lindau Committee)
   \item 2016 - Georgia Tech Institute Fellowship (Georgia Institute of Technology)
   \item 2016 - Outstanding Senior in Physics (University of Kentucky)
@@ -83,29 +90,46 @@
   \item Fall 2017 - TA for Introductory Physics I
   \end{itemize}
 
-  \textbf{Publications:}
+  \textbf{Short Author Publications:}
+  \begin{itemize}  
+	\item \fullcite{Ferguson:2020xnm}
+    \item \fullcite{Evans:2020lbq}
+    \item \fullcite{Ferguson:2019slp}
+    \item \fullcite{Heal:2017abq}
+    \item \fullcite{2017ApJ...843..141F}
+  \end{itemize}
+  
+  \textbf{Collaboration Publications:}
   \begin{itemize}
-  \item D. Ferguson, et al., ``Measuring Spin of the Remnant Black Hole from Maximum Amplitude'', Phys. Rev. Lett. 123, 151101 (2019) arXiv:1905.03756
-  \item LIGO Scientific Collaboration, ``Open data from the first and second observing runs of Advanced LIGO and Advanced Virgo'', submitted (2019) arXiv:1912.11716
-  \item D. Ferguson, S. Gardner, and B. Yanny, ``Milky Way Tomography with K and M Dwarf Stars: The Vertical Structure of the Galactic Disk'', ApJ 843, 141 (2017) arXiv:1706.01900
-    \item J. Healy, et al., ``Targeted numerical simulations of binary black holes for GW170104'', Phys. Rev. D 97, 064027 (2017) arXiv:1712.05836
+  \item \fullcite{Abbott:2020yvp}
+  \item \fullcite{Abbott:2020gyp}
+  \item \fullcite{Abbott:2020jks}
+  \item \fullcite{Abbott:2020niy}
+  \item \fullcite{Abbott:2020mjq}
+  \item \fullcite{Abbott:2020tfl}
+  \item \fullcite{Abbott:2020khf}
+  \item \fullcite{LIGOScientific:2020stg}
+  \item \fullcite{Abbott:2019ebz}
+  \item \fullcite{Salemi:2019ovz}
   \end{itemize}
 
   \textbf{Presentations:}
   \begin{itemize}
-  \item \underline{D. Ferguson}, K. Jani, D. Shoemaker, (2020 Jan), poster and oral, ``Assessing the Readiness of Numerical Relativity for Future Gravitational Wave Detections'', 235th Meeting of the Americal Astronomical Society, Honolulu HI
-  \item \underline{D. Ferguson}, (2019 June), oral, ``Using Machine Learning to Optimize Placement of Numerical Relativity Simulations'', Machine Learning in Science and Engineering Conference, Atlanta GA
-  \item \underline{D. Ferguson}, K. Jani, D. Shoemaker, (2019 May), poster, ``Numerical Relativity Errors in LISA'', LISA Waveform Working Group Meeting, Golm Germany
-  \item \underline{D. Ferguson}, et al., (2018 Apr), oral, ``Revealing the Final Black Hole from Signal at Maximum Amplitude'', American Physical Society April Meeting, Columbus OH
-  \item \underline{D. Ferguson}, et al., (2017 Oct), oral, ``Apparent Horizon Dynamics of Binary Black Hole Systems'', Georgia Regional Astronomers Meeting, Athens GA
-  \item \underline{C. Powell}, \underline{D. Ferguson}, (2014 Apr), poster and oral, ``A Mobile Physics Engine Modeling Two Dimensional Elastic and Inelastic Collisions for the Educational Demonstration of Physics Phenomena''. National Conference on Undergraduate Research, Lexington KY  
+  \item D. Ferguson, K. Jani, P. Laguna, D. Shoemaker (2020 Sep), oral, ``Assessing the Readiness of Numerical Relativity for LISA'', 13th International LISA Symposium, Virtual
+  \item D. Ferguson, K. Jani, D. Shoemaker, (2020 Apr), oral, ``Assessing the Readiness of Numerical Relativity for Future Gravitational Wave Detections'', American Physical Society April Meeting, Virtual
+  \item D. Ferguson, K. Jani, D. Shoemaker, (2020 Jan), poster and oral, ``Assessing the Readiness of Numerical Relativity for Future Gravitational Wave Detections'', 235th Meeting of the Americal Astronomical Society, Honolulu HI
+  \item D. Ferguson, (2019 June), oral, ``Using Machine Learning to Optimize Placement of Numerical Relativity Simulations'', Machine Learning in Science and Engineering Conference, Atlanta GA
+  \item D. Ferguson, K. Jani, D. Shoemaker, (2019 May), poster, ``Numerical Relativity Errors in LISA'', LISA Waveform Working Group Meeting, Golm Germany
+  \item D. Ferguson, et al., (2018 Apr), oral, ``Revealing the Final Black Hole from Signal at Maximum Amplitude'', American Physical Society April Meeting, Columbus OH
+  \item D. Ferguson, et al., (2017 Oct), oral, ``Apparent Horizon Dynamics of Binary Black Hole Systems'', Georgia Regional Astronomers Meeting, Athens GA
+  \item C. Powell, D. Ferguson, (2014 Apr), poster and oral, ``A Mobile Physics Engine Modeling Two Dimensional Elastic and Inelastic Collisions for the Educational Demonstration of Physics Phenomena''. National Conference on Undergraduate Research, Lexington KY  
   \end{itemize}
   
   \textbf{Leadership and Outreach:}
   \begin{itemize}
   \item 2018 - Served on Undergraduate Research Panel at Society of Women in Physics Conference
-  \item 2017-Present - Vertically Integrated Projects Mentor
-  \item 2017-Present - Graduate Association of Physics Mentor
+  \item 2017-2019 - Vertically Integrated Projects Mentor
+  \item 2017-2019 - Graduate Association of Physics Mentor
   \item 2013-2016 - Presented at University of Kentucky Engineering Fair
   \end{itemize}
 
