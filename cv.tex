@@ -1,5 +1,7 @@
 \documentclass[11pt]{article}
 
+\newcounter{papers}
+
 \usepackage[style=numeric,sorting=none]{biblatex}%<- specify style
 \renewbibmacro{in:}{}
 \addbibresource{cv.bib}%<- specify bib file
@@ -20,77 +22,87 @@
 \begin{flushleft}
 
   Email: deborah.ferguson@austin.utexas.edu\\
-  Phone: (859) 699-2196\\
   Webpage: deborahferguson.info\\
   \vspace{8px}
   
-  \textbf{Education:}
-  \begin{itemize}
-  \item Ph.D., Physics, Georgia Institute of Techcnology, 2020
-  \item M.S., Physics, Georgia Institute of Techcnology, 2017
-  \item B.S., Physics, University of Kentucky, 2016, \textit{summa cum laude}, \\ Mathematics and Computer Science Minors
-  \end{itemize}
+  \textbf{Education:}\\
+  Ph.D., Physics, Georgia Institute of Techcnology, 2020\\
+  M.S., Physics, Georgia Institute of Techcnology, 2017\\
+  B.S., Physics, University of Kentucky, 2016, \textit{summa cum laude} \\ Mathematics and Computer Science Minors\\
 
-  \textbf{Research Positions:}
-  \begin{itemize}
-  \item Using Compact Binary Coalescences to Probe Strong-Field Gravity \\
-    Institute: Georgia Institute of Technology \\
-    Level: Graduate \\
-    Years: 2016-2020 \\
-    Advisor: Deirdre Shoemaker 
-  \item Milky Way Tomography with K and M Dwarf Stars: The Vertical Structure of the Galactic Disk \\
-    Institute: University of Kentucky \\
-    Level: Undergraduate \\
-    Years: 2014-2017 \\
-    Advisor: Susan Gardner
-  \item Using Resonant Frequencies and Overtones to Calculate the Sound Velocity of TIPS Pentacene \\
-    Institute: University of Kentucky \\
-    Level: Undergraduate \\
-    Years: 2013-2014 \\
-    Advisor: Joseph Brill
-  \item Developing a Mobile Physics Engine Modeling Two Dimensional Elastic and Inelastic Collisions for the Educational Demonstration of Physics Phenomena \\
-    Institute: University of Kentucky \\
-    Level: Undergraduate \\
-    Years: 2013-2014 \\
-    Advisor: Jerzy Jaromczyk 
-  \end{itemize}
+\vspace{8px}
 
-  \textbf{Honors and Awards:}
-  \begin{itemize}
-  \item 2020 - Larry S. O'Hara Graduate Student Fellowship (Georgia Institute of Technology)
-  \item 2020 - Amelio Award for Research Excellence (Georgia Institute of Technology)
-  \item 2019 - Lindau Nobel Laureate Meeting (Oak Ridge and Lindau Committee)
-  \item 2016 - Georgia Tech Institute Fellowship (Georgia Institute of Technology)
-  \item 2016 - Outstanding Senior in Physics (University of Kentucky)
-  \item 2015 - Oswald Award Honorable Mention (University of Kentucky)
-  \item 2015 - First Place in University of Kentucky ACM Chapter Algorithmic Programming Competition (University of Kentucky)
-  \item 2015 - Summer Research Grant (University of Kentucky)
-  \item 2015 - Outstanding Junior in Physics (University of Kentucky)
-  \item 2014 - 42nd in United States in IEEEXtreme 24-Hour Programming Competition (IEEE)
-  \item 2013 - Singletary Scholarship (University of Kentucky)
-  \item 2013 - National Merit Finalist (National Merit Scholarship Foundation)
-  \end{itemize}
+  \textbf{Research Positions:}\\
+  \vspace{4px}
+ 
+  \textit{Postdoctoral Fellow} \hfill \textit{2021-Present} \\
+  University of Texas at Austin\\
+  Research focus: Optimizing the use of numerical relativity with next generation\\ gravitational wave detectors\\
+  Advisor: Deirdre Shoemaker\\
   
-  \textbf{Teaching:}
-  \begin{itemize}
-  \item Spring 2018 - Head TA for Introductory Physics I
-  \item Fall 2017 - TA for Honors Introductory Physics II
-  \item Summer 2017 - TA for Online Introductory Physics I
-  \item Spring 2017 - TA for Introductory Physics II
-  \item Fall 2017 - TA for Introductory Physics I
-  \end{itemize}
+ \vspace{8px}  
+  
+  \textit{Graduate Research Assistant} \hfill \textit{2016-2020}\\
+  Georgia Institute of Technology\\
+  Dissertation title: Strong-Field Numerical Relativity in the Era of Gravitational\\ Wave Astronomy\\
+  Advisor: Deirdre Shoemaker\\
+  
+  \vspace{8px}
+	
+  \textit{Undergraduate Research Assistant} \hfill \textit{2013-2017}\\
+  University of Kentucky\\
+  Research focus: Milky Way tomography with K and M dwarf Stars: the vertical\\ structure of the galactic disk\\ 
+  Advisor: Susan Gardner\\
+  \vspace{2px}
+  Research focus: Using resonant frequencies and overtones to calculate the\\ sound velocity of TIPS Pentacene\\
+  Advisor: Joseph Brill\\
+  \vspace{2px}
+  Research focus: Developing a mobile physics engine modeling two dimensional\\ elastic and inelastic collisions for the educational demonstration of physics phenomena\\
+  Advisor: Jerzy Jaromczyk\\
+  
+  \vspace{8px}
+	
+  \textbf{Honors and Awards:}\\
+  2020 - Larry S. O'Hara Graduate Student Fellowship (Georgia Institute of Technology)\\
+  2020 - Amelio Award for Research Excellence (Georgia Institute of Technology)\\
+  2019 - Lindau Nobel Laureate Meeting (Oak Ridge and Lindau Committee)\\
+  2016 - Georgia Tech Institute Fellowship (Georgia Institute of Technology)\\
+  2016 - Outstanding Senior in Physics (University of Kentucky)\\
+  2015 - Oswald Award Honorable Mention (University of Kentucky)\\
+  2015 - First Place in University of Kentucky ACM Chapter Algorithmic Programming Competition\\ 
+  \hspace{29px} (University of Kentucky)\\
+  2015 - Summer Research Grant (University of Kentucky)\\
+  2015 - Outstanding Junior in Physics (University of Kentucky)\\
+  2014 - 42nd in United States in IEEEXtreme 24-Hour Programming Competition (IEEE)\\
+  2013 - Singletary Scholarship (University of Kentucky)\\
+  2013 - National Merit Finalist (National Merit Scholarship Foundation)\\
+
+\vspace{8px}
 
   \textbf{Short Author Publications:}
-  \begin{itemize}  
+  \begin{enumerate}  
 	\item \fullcite{Ferguson:2020xnm}
     \item \fullcite{Evans:2020lbq}
     \item \fullcite{Ferguson:2019slp}
     \item \fullcite{Heal:2017abq}
     \item \fullcite{2017ApJ...843..141F}
-  \end{itemize}
+    \setcounter{papers}{\value{enumi}}
+  \end{enumerate}
   
   \textbf{Collaboration Publications:}
-  \begin{itemize}
+  \begin{enumerate}
+  \setcounter{enumi}{\value{papers}}
+  \item \fullcite{Abbott:2021iab}
+  \item \fullcite{Abbott:2021jiu}
+  \item \fullcite{Abbott:2021jel}
+  \item \fullcite{Abbott:2021ksc}
+  \item \fullcite{Abbott:2021xxi}
+  \item \fullcite{Abbott:2020ilb}
+  \item \fullcite{Abbott:2020mev}
+  \item \fullcite{Abbott:2020yvp}
+  \item \fullcite{Abbott:2020gyp}
+  \item \fullcite{Abbott:2020jks}
+  \item \fullcite{Abbott:2020niy}  
   \item \fullcite{Abbott:2020yvp}
   \item \fullcite{Abbott:2020gyp}
   \item \fullcite{Abbott:2020jks}
@@ -101,10 +113,19 @@
   \item \fullcite{LIGOScientific:2020stg}
   \item \fullcite{Abbott:2019ebz}
   \item \fullcite{Salemi:2019ovz}
-  \end{itemize}
+  \end{enumerate}
 
-  \textbf{Presentations:}
-  \begin{itemize}
+  \textbf{Invited Talks:}
+  \begin{enumerate}
+  \item "Gravitational Wave Data Analysis", North American Einstein Toolkit Workshop, July 29, 2021
+  \item “Assessing the Preparedness of Numerical Relativity for Current and Future Gravitational Wave Detectors”, Seminar at Gravity Group, University of Mississippi, Oxford, MS, March 18, 2021
+  \item “Assessing the Preparedness of Numerical Relativity for Current and Future Gravitational Wave Detectors”, Seminar at Astrophysics/Gravity/Cosmology Group, University of Illinois Urbana-Champaign, Champaign, IL, November 11, 2020
+  \end{enumerate}
+
+  \textbf{Conference Presentations:}
+  \begin{enumerate}
+  \item D.Ferguson, D.Shoemaker (2021 July), oral ``Impact of Secondary Spin in Black Hole Binaries with Increasing Mass Ratio'', 14th Edoardo Amaldi Conference on Gravitational Waves, Virtual
+  \item D.Ferguson,  D.Shoemaker (2021 April),  oral ``Impact of Secondary Spin in Black Hole Binaries with Increasing Mass Ratio'',  American Physical Society April Meeting, Virtual
   \item D. Ferguson, K. Jani, P. Laguna, D. Shoemaker (2020 Sep), oral, ``Assessing the Readiness of Numerical Relativity for LISA'', 13th International LISA Symposium, Virtual
   \item D. Ferguson, K. Jani, D. Shoemaker, (2020 Apr), oral, ``Assessing the Readiness of Numerical Relativity for Future Gravitational Wave Detections'', American Physical Society April Meeting, Virtual
   \item D. Ferguson, K. Jani, D. Shoemaker, (2020 Jan), poster and oral, ``Assessing the Readiness of Numerical Relativity for Future Gravitational Wave Detections'', 235th Meeting of the Americal Astronomical Society, Honolulu HI
@@ -113,20 +134,31 @@
   \item D. Ferguson, et al., (2018 Apr), oral, ``Revealing the Final Black Hole from Signal at Maximum Amplitude'', American Physical Society April Meeting, Columbus OH
   \item D. Ferguson, et al., (2017 Oct), oral, ``Apparent Horizon Dynamics of Binary Black Hole Systems'', Georgia Regional Astronomers Meeting, Athens GA
   \item C. Powell, D. Ferguson, (2014 Apr), poster and oral, ``A Mobile Physics Engine Modeling Two Dimensional Elastic and Inelastic Collisions for the Educational Demonstration of Physics Phenomena''. National Conference on Undergraduate Research, Lexington KY  
-  \end{itemize}
+  \end{enumerate} 
   
-  \textbf{Leadership and Outreach:}
-  \begin{itemize}
-  \item 2018 - Served on Undergraduate Research Panel at Society of Women in Physics Conference
-  \item 2017-2019 - Vertically Integrated Projects Mentor
-  \item 2017-2019 - Graduate Association of Physics Mentor
-  \item 2013-2016 - Presented at University of Kentucky Engineering Fair
-  \end{itemize}
+  \textbf{Teaching:}\\
+  Spring 2018 - Head TA for Introductory Physics I\\
+  Fall 2017 - TA for Honors Introductory Physics II\\
+  Summer 2017 - TA for Online Introductory Physics I\\
+  Spring 2017 - TA for Introductory Physics II\\
+  Fall 2017 - TA for Introductory Physics I\\
+ 
+  \vspace{8px}   
+ 
+  \textbf{Leadership and Outreach:}\\
+  2021 - Generated visualizations for LVC announcement of Black-Hole Neutron-Star mergers\\
+  2020 - Generated visualizations for GW190521 announcement\\
+  2019 - Atlanta Science Tavern Talk: Black holes wave back: observing the most violent events in the cosmos\\
+  2018 - Served on Undergraduate Research Panel at Society of Women in Physics Conference\\
+  2017-2019 - Vertically Integrated Projects Mentor\\
+  2017-2019 - Graduate Association of Physics Mentor\\
+  2013-2016 - Presented at University of Kentucky Engineering Fair\\
 
-  \textbf{Professional Service: }
-  \begin{itemize}
-  \item 2017 - Served as scribe for NASA Astrophysics Theory Program Review Panel
-  \end{itemize}
+  \vspace{8px}
+
+  \textbf{Professional Service: }\\
+  PRD, PRL Referee\\
+  2017 - Served as scribe for NASA Astrophysics Theory Program Review Panel\\
   
 \end{flushleft}
 \end{document}
