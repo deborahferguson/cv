@@ -1,0 +1,10 @@
+.DS_Store
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.pdf
+*.run.xml
+cvNotes.bib
+*.log
